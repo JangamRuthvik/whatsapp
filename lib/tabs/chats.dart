@@ -12,10 +12,10 @@ class ChatsState extends State<Chats> {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
-      itemCount: 8,
+      itemCount: 10,
       itemBuilder: (context, index) {
         return ListTile(
-          contentPadding: const EdgeInsets.all(16),
+          contentPadding: const EdgeInsets.only(left: 8,right: 8,top: 8,bottom: 0),
           leading: const CircleAvatar(
               backgroundImage: AssetImage('assets/images/a.jpg')),
           title: const Text(
